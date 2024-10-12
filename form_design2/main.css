@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: monospace;
+}
+
+body {
+    background-color: #ccfef9;
+}
+
+form {
+    background-color: #f6f9fc;
+    width: 750px;
+    min-height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    box-shadow: 0 2px 15px 0 #2e496cce;
+    overflow: hidden;
+}
+
+@media (max-width:374px) {
+    form{
+        width: 90%;
+        height: fit-content;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    form {
+        margin-top: 0%;
+        margin-bottom: 10%;
+        width: 360px;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .shape {
+        order: -1;
+    }
+}
+
+.inputs {
+    padding: 2%;
+    padding-bottom: 5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .inputs {
+        width: 100%;
+    }
+}
+
+form>.inputs>h1 {
+    color: #09413b;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 10% 0 20%;
+    font-size: 3em;
+}
+
+input[type="email"],input[type="password"] {
+    background-color: #f0ebeb;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    outline: none;
+    border: none;
+    height: 2.5em;
+    border-radius: 3px;
+    padding: 3%;
+    color: #0b312d;
+}
+
+input[type="submit"],button {
+    width: 50%;
+    height: 2em;
+    border: none;
+    margin: 5% auto;
+    border-radius: 6px;
+    font-size: 1.2em;
+    color: #f6f9fc;
+    background-color: #009688;
+    box-shadow: 0 0 2px 0 #166961;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover ,button:hover{
+    background-color: #009688c3;
+}
+
+a {
+    margin-top: 10%;
+    text-align: center;
+    text-decoration: none;
+    color: #166961;
+}
+
+
+.shape {
+    width: 50%;
+    padding-top: 10%;
+    background-color: #009688;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    color: #f6f9fc;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:767px) {
+    .shape {
+        width: 100%;
+        padding-bottom: 5%;
+        border-radius: 0;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+    }
+}
+
+.shape>h1 {
+    font-size: 2.5em;
+    margin: 10%;
+    margin-bottom: 5%;
+}
+
+.shape>p {
+    margin-top: 10%;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 0;
+    margin-bottom: 10%;
+    font-size: 0.8em;
+}
+
+.shape button {
+    background-color: transparent;
+    border: 1px solid #f6f9fc;
+}
+
+.shape>button:hover {
+    border:1px solid #0b312dc3;
+    color: #0b312dc3;
+}
+
+::placeholder {
+    color: #0b312d;
+}
+
+.shape ::selection {
+    background-color: #f6f9fc;
+    color: #009688;
+}
+
+.inputs ::selection {
+    background-color: #009688;
+    color: #f6f9fc;
+}
+
+
+#shape2 {
+    display: none;
+}

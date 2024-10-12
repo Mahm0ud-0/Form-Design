@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="bg-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+    </div>
+
+        <form action="">
+            <h1>SIGN IN</h1>
+            <div class="inp-box">
+                <input type="text" name="usr" id="inp1">
+                <i id="plc1">USERNAME</i>
+            </div>
+            <div class="inp-box">
+                <input type="password" name="pass" id="inp2">
+                <i id="plc2">PASSWORD</i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password ?</a>
+                <a href="#" id="sign-up">Sign Up</a>
+            </div>
+            <div class="inp-box">
+                <input type="submit" value="Log In">
+            </div>
+        </form>
+        <script>
+            let inpEl_1 = document.getElementById("inp1")
+            let plcEl_1 = document.getElementById("plc1")
+
+            let inpEl_2 = document.getElementById("inp2")
+            let plcEl_2 = document.getElementById("plc2")
+
+            inpEl_1.textContent = ""
+            inpEl_2.textContent = ""
+
+            inpEl_1.addEventListener("focus",function(){
+                plcEl_1.style.left = "4%"
+                plcEl_1.style.top = "6%"
+                plcEl_1.style.fontSize = "0.8em"
+                plcEl_1.style.color = "#ccc"
+                plcEl_1.style.transitionDuration = "0.3s"
+                
+            })
+            
+            inpEl_1.addEventListener("blur",function(){
+                if (inpEl_1.value == "") {
+                    plcEl_1.style.left = "5%"
+                    plcEl_1.style.top = "23%"
+                    plcEl_1.style.fontSize = "1em"
+                    plcEl_1.style.color = "#737974"
+                    plcEl_1.style.transitionDuration = "0.3s"
+                }
+            
+            })
+
+            inpEl_2.addEventListener("focus",function(){
+                plcEl_2.style.left = "4%"
+                plcEl_2.style.top = "6%"
+                plcEl_2.style.fontSize = "0.8em"
+                plcEl_2.style.color = "#ccc"
+                plcEl_2.style.transitionDuration = "0.3s"
+            
+            })
+
+            inpEl_2.addEventListener("blur",function(){
+                if (inpEl_2.value == "") {
+                    plcEl_2.style.left = "5%"
+                    plcEl_2.style.top = "23%"
+                    plcEl_2.style.fontSize = "1em"
+                    plcEl_2.style.color = "#737974"
+                    plcEl_2.style.transitionDuration = "0.3s"
+                }
+            
+            })
+
+
+        </script>
+</body>
+</html>
